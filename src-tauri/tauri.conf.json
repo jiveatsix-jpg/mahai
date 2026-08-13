@@ -11,7 +11,7 @@
     "windows": [
       {
         "title": "Ma'hai",
-        "width": 860,
+        "width": 1040,
         "height": 620,
         "resizable": true,
         "fullscreen": false

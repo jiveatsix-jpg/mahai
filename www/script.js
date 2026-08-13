@@ -1,7 +1,7 @@
 const invoke = window.__TAURI__.core.invoke;
 
 const footerText = document.getElementById('footer-text');
-const cards = document.querySelectorAll('.app-card');
+const cards = document.querySelectorAll('.card');
 
 cards.forEach((card) => {
   const statusEl = card.querySelector('[data-status]');

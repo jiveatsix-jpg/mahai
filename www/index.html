@@ -6,52 +6,59 @@
 <title>MA'HAI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Antonio:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="lcars-frame">
-  <div class="elbow elbow-top" aria-hidden="true"></div>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-icon" aria-hidden="true">&#9635;</span>
+    <h1 class="logo">MA'HAI</h1>
+    <span class="brand-sub">centro de lanzamiento v1.0</span>
+  </div>
+</header>
 
-  <header class="mahai-header">
-    <div class="mahai-title">MA'HAI</div>
-    <div class="mahai-subtitle">CENTRO DE LANZAMIENTO // APP HUB</div>
-  </header>
+<main class="view">
+  <h2 class="sec">APPS INSTALADAS</h2>
 
-  <main class="mahai-grid" id="grid">
-    <button class="app-card card-orange" data-exe="NioBiologic.exe" data-label="NioBiologic">
-      <span class="card-index">01</span>
-      <span class="card-name">NIOBIOLOGIC</span>
-      <span class="card-status" data-status></span>
+  <div class="grid" id="grid">
+    <button class="pbox card card-red" data-exe="NioBiologic.exe" data-label="NioBiologic">
+      <span class="tag red">01</span>
+      <span class="card-title">NIOBIOLOGIC</span>
+      <span class="card-meta" data-status>&nbsp;</span>
     </button>
 
-    <button class="app-card card-blue" data-exe="CaptainsLog.exe" data-label="Captain's Log">
-      <span class="card-index">02</span>
-      <span class="card-name">CAPTAIN'S LOG</span>
-      <span class="card-status" data-status></span>
+    <button class="pbox card card-blue" data-exe="CaptainsLog.exe" data-label="Captain's Log">
+      <span class="tag blue">02</span>
+      <span class="card-title">CAPTAIN'S LOG</span>
+      <span class="card-meta" data-status>&nbsp;</span>
     </button>
 
-    <button class="app-card card-violet" data-exe="PixelProcessor.exe" data-label="PixelProcessor">
-      <span class="card-index">03</span>
-      <span class="card-name">PIXELPROCESSOR</span>
-      <span class="card-status" data-status></span>
+    <button class="pbox card card-pink" data-exe="PixelProcessor.exe" data-label="PixelProcessor">
+      <span class="tag pink">03</span>
+      <span class="card-title">PIXELPROCESSOR</span>
+      <span class="card-meta" data-status>&nbsp;</span>
     </button>
 
-    <button class="app-card card-salmon" data-exe="AntiCloud.exe" data-label="AntiCloud">
-      <span class="card-index">04</span>
-      <span class="card-name">ANTICLOUD</span>
-      <span class="card-status" data-status></span>
+    <button class="pbox card card-green" data-exe="AntiCloud.exe" data-label="AntiCloud">
+      <span class="tag green">04</span>
+      <span class="card-title">ANTICLOUD</span>
+      <span class="card-meta" data-status>&nbsp;</span>
     </button>
-  </main>
 
-  <footer class="mahai-footer">
-    <div class="footer-strip"></div>
-    <div class="footer-text" id="footer-text">SISTEMA LISTO</div>
-  </footer>
+    <button class="pbox card card-yellow" data-exe="Nyomcraft.exe" data-label="Nyomcraft">
+      <span class="tag yellow">05</span>
+      <span class="card-title">&Ntilde;OMCRAFT</span>
+      <span class="card-meta" data-status>&nbsp;</span>
+    </button>
+  </div>
+</main>
 
-  <div class="elbow elbow-bottom" aria-hidden="true"></div>
-</div>
+<footer class="statusbar">
+  <span id="footer-text">SISTEMA LISTO</span>
+  <span>MASTERSOFTHECODE // JIVEATSIX</span>
+</footer>
 
 <script src="script.js"></script>
 </body>
