@@ -17,6 +17,7 @@
   --blue:     #56b3f0;
   --pink:     #f28ab8;
   --cyan:     #5fd9c5;
+  --purple:   #b58bf2;
 
   --px: 4px;
   --pixel: 'Press Start 2P', 'Courier New', monospace;
@@ -149,6 +150,7 @@ h2.sec {
 .tag.pink   { background: var(--pink); }
 .tag.red    { background: var(--red); }
 .tag.cyan   { background: var(--cyan); }
+.tag.purple { background: var(--purple); }
 
 /* tinte de fondo de cada tarjeta, sutil (no tapa el texto) */
 .card-red    { background: linear-gradient(var(--panel), var(--panel)) padding-box, none; border-color: var(--red); }
@@ -157,6 +159,7 @@ h2.sec {
 .card-green  { border-color: var(--green); }
 .card-yellow { border-color: var(--yellow); }
 .card-cyan   { border-color: var(--cyan); }
+.card-purple { border-color: var(--purple); }
 
 /* ---------- pie ---------- */
 
