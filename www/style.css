@@ -18,6 +18,8 @@
   --pink:     #f28ab8;
   --cyan:     #5fd9c5;
   --purple:   #b58bf2;
+  --orange:   #ff9d4d;
+  --lime:     #c6e34d;
 
   --px: 4px;
   --pixel: 'Press Start 2P', 'Courier New', monospace;
@@ -66,6 +68,22 @@ body::after {
 }
 
 .brand { display: flex; align-items: center; gap: 12px; }
+
+.btn-uninstall {
+  margin-left: auto;
+  font-family: var(--pixel); font-size: 10px; letter-spacing: 1px;
+  color: var(--text);
+  background: var(--panel2);
+  border: var(--px) solid var(--ink);
+  box-shadow:
+    inset 0 var(--px) 0 rgba(255,255,255,.09),
+    inset 0 calc(var(--px) * -1) 0 rgba(0,0,0,.40),
+    0 var(--px) 0 rgba(0,0,0,.55);
+  padding: 10px 14px;
+  cursor: pointer;
+}
+.btn-uninstall:hover { color: var(--red); border-color: var(--red); }
+.btn-uninstall:active { transform: translateY(2px); box-shadow: none; }
 .brand-icon { font-size: 22px; color: var(--yellow); }
 
 .logo {
@@ -151,6 +169,8 @@ h2.sec {
 .tag.red    { background: var(--red); }
 .tag.cyan   { background: var(--cyan); }
 .tag.purple { background: var(--purple); }
+.tag.orange { background: var(--orange); }
+.tag.lime   { background: var(--lime); }
 
 /* tinte de fondo de cada tarjeta, sutil (no tapa el texto) */
 .card-red    { background: linear-gradient(var(--panel), var(--panel)) padding-box, none; border-color: var(--red); }
@@ -160,6 +180,8 @@ h2.sec {
 .card-yellow { border-color: var(--yellow); }
 .card-cyan   { border-color: var(--cyan); }
 .card-purple { border-color: var(--purple); }
+.card-orange { border-color: var(--orange); }
+.card-lime   { border-color: var(--lime); }
 
 /* ---------- pie ---------- */
 

@@ -2,6 +2,7 @@ const invoke = window.__TAURI__.core.invoke;
 
 const footerText = document.getElementById('footer-text');
 const cards = document.querySelectorAll('.card');
+const uninstallBtn = document.getElementById('uninstall-btn');
 
 cards.forEach((card) => {
   const statusEl = card.querySelector('[data-status]');
@@ -23,4 +24,14 @@ cards.forEach((card) => {
       footerText.textContent = 'SISTEMA LISTO';
     }, 4000);
   });
+});
+
+uninstallBtn.addEventListener('click', async () => {
+  footerText.textContent = 'ABRIENDO DESINSTALADOR...';
+  try {
+    await invoke('launch_uninstaller');
+  } catch (err) {
+    footerText.textContent = `ERROR: ${err}`;
+    setTimeout(() => { footerText.textContent = 'SISTEMA LISTO'; }, 4000);
+  }
 });
