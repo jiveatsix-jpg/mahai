@@ -21,6 +21,7 @@
   --orange:   #ff9d4d;
   --lime:     #c6e34d;
   --magenta:  #e94ff0;
+  --gold:     #d9a441;
 
   --px: 4px;
   --pixel: 'Press Start 2P', 'Courier New', monospace;
@@ -174,6 +175,7 @@ h2.sec {
 .tag.orange { background: var(--orange); }
 .tag.lime   { background: var(--lime); }
 .tag.magenta{ background: var(--magenta); }
+.tag.gold   { background: var(--gold); }
 
 /* tinte de fondo de cada tarjeta, sutil (no tapa el texto) */
 .card-red    { background: linear-gradient(var(--panel), var(--panel)) padding-box, none; border-color: var(--red); }
@@ -186,6 +188,7 @@ h2.sec {
 .card-orange { border-color: var(--orange); }
 .card-lime   { border-color: var(--lime); }
 .card-magenta{ border-color: var(--magenta); }
+.card-gold   { border-color: var(--gold); }
 
 /* ---------- pie ---------- */
 
