@@ -1,6 +1,6 @@
 use std::process::Command;
 
-const ALLOWED_EXE: [&str; 11] = [
+const ALLOWED_EXE: [&str; 12] = [
     "NioBiologic.exe",
     "CaptainsLog.exe",
     "PixelProcessor.exe",
@@ -12,6 +12,7 @@ const ALLOWED_EXE: [&str; 11] = [
     "MediaOps.exe",
     "AeterCalendar.exe",
     "RetroDarts.exe",
+    "DarkSpace.exe",
 ];
 
 #[tauri::command]
